@@ -5,10 +5,8 @@ import plotly.express as px
 from PIL import Image
 import pathlib
 
-
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
-
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 st.title("Добро пожаловать 👋 💯")
 st.header('Это приложение распознавать :green[любые изображений] с помощи :red[искусственный интеллект]🤓 🦾')
