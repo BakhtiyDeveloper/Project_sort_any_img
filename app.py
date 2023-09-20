@@ -13,7 +13,7 @@ st.header('Это приложение распознавать :green[любы�
 
 #загружаем изображении
 
-file_upload = st.file_uploader('Загрузите изображение  👉', type= ['png', 'jpeg', 'gif', 'svg', 'jpg'])
+file_upload = st.file_uploader('Загрузите изображение  👉', type= ['png', 'jpeg', 'gif', 'svg', 'jpg', 'JPEG'])
 
 if file_upload:
     st.image(file_upload)
