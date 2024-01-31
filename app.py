@@ -26,7 +26,7 @@ result = st.button('Распознавать изображения  👈')
 if result:
     model = load_learner('Sort_any_images_class.pkl')
     pred, pred_id, probs = model.predict(img)
-    if probs [pred_id] * 100 > 90:
+    if probs [pred_id] * 100 > 75:
         st.success(f'Предсказания: 👍  {pred}')
         st.success(f'Вероятность: {probs [pred_id]*100/1}%')
     else:
